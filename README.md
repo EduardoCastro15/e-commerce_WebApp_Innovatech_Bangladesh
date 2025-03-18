@@ -96,4 +96,4 @@ We welcome contributions! If you'd like to contribute:
 5. Open a Pull Request
 
 ## **Contact**
-For inquiries, please contact **Jorge Eduardo Castro Cruces** at **georgecastrocruces1515@gmail.com** or visit our official website: **https://github.com/EduardoCastro15/Innovatech-Bangladesh.git**
+For inquiries, please contact **Jorge Eduardo Castro Cruces** at **georgecastrocruces1515@gmail.com** or visit our official website: **https://www.linkedin.com/in/jorge-eduardo-castro-cruces-295610233/**
