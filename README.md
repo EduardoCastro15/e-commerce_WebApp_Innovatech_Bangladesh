@@ -1,5 +1,6 @@
 # **Project Name: Innovatech-Bangladesh**
 
+
 ## **Overview**
 This project is a digital marketplace designed to connect **farmers** with **consumers**, enabling direct sales of agricultural products. Inspired by platforms like **Amazon, Mercado Libre, and Mache Haiti**, our goal is to provide a seamless, **mobile-friendly, and multilingual** experience that enhances market access for rural producers.
 
