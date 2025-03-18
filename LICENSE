@@ -1,21 +1,42 @@
-MIT License
+**PROPRIETARY SOFTWARE LICENSE AGREEMENT**
 
-Copyright (c) 2025 Jorge Eduardo Castro Cruces
+This Proprietary Software License Agreement ("Agreement") is made and entered into as of the date of use of the software ("Effective Date"), by and between the owner of the software ("Licensor") and any user or entity accessing, downloading, or using the software ("Licensee").
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+**1. LICENSE GRANT**  
+1.1 The Licensor hereby grants the Licensee a non-exclusive, non-transferable, and limited license to use the software solely for internal business purposes and in accordance with the terms of this Agreement.  
+1.2 The Licensee is expressly prohibited from copying, modifying, distributing, sublicensing, reverse-engineering, decompiling, or disassembling any portion of the software, except as expressly permitted by the Licensor in writing.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+**2. OWNERSHIP AND INTELLECTUAL PROPERTY**  
+2.1 The software and all intellectual property rights therein remain the exclusive property of the Licensor.  
+2.2 Licensee acknowledges and agrees that this Agreement does not transfer any ownership rights in the software and that any modifications, improvements, or derivative works created based on the software shall be the exclusive property of the Licensor.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+**3. RESTRICTIONS**  
+3.1 Licensee shall not:  
+   a) Use the software for any unlawful or unauthorized purpose.  
+   b) Rent, lease, sublicense, sell, or distribute the software to any third party.  
+   c) Remove or alter any proprietary notices or labels on the software.  
+
+**4. CONFIDENTIALITY**  
+4.1 Licensee agrees to maintain the confidentiality of the software and any related proprietary information and shall not disclose such information to any third party without the prior written consent of the Licensor.
+
+**5. DISCLAIMER OF WARRANTIES**  
+5.1 THE SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.  
+5.2 LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE OR OPERATE WITHOUT INTERRUPTION.
+
+**6. LIMITATION OF LIABILITY**  
+6.1 IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THE SOFTWARE, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+**7. TERMINATION**  
+7.1 This Agreement shall remain in effect until terminated by either party.  
+7.2 Licensor may terminate this Agreement immediately if Licensee breaches any term or condition herein.  
+7.3 Upon termination, Licensee must cease all use of the software and destroy all copies in their possession.
+
+**8. GOVERNING LAW**  
+8.1 This Agreement shall be governed and construed in accordance with the laws of [Jurisdiction], without regard to its conflict of law principles.
+
+**9. GENERAL PROVISIONS**  
+9.1 This Agreement constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes all prior agreements, whether written or oral.  
+9.2 If any provision of this Agreement is found to be invalid or unenforceable, the remaining provisions shall continue in full force and effect.
+
+IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.
+
