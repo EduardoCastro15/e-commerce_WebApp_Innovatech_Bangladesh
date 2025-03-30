@@ -98,3 +98,27 @@ We welcome contributions! If you'd like to contribute:
 
 ## **Contact**
 For inquiries, please contact **Jorge Eduardo Castro Cruces** at **georgecastrocruces1515@gmail.com** or visit our official website: **https://www.linkedin.com/in/jorge-eduardo-castro-cruces-295610233/**
+
+```
+.
+├── CHANGELOG.md
+├── README.md
+├── assets/                 # ✅ Fine as-is for legacy/custom assets
+│   ├── js/
+│   └── scss/               # Can be used for raw SCSS or migrated into Tailwind/global CSS
+├── hooks/                 # ✅ Perfect for custom hooks
+│   ├── interaction/
+│   └── tools/
+├── public/                # ✅ Static assets (served as-is)
+│   ├── data.json          # Can be fetched via `/data.json`
+│   ├── images/            # Accessible as `/images/...`
+│   └── logo/
+├── src/
+│   ├── components/        # ✅ React components
+│   ├── layouts/           # ✅ Optional, for shared layouts
+│   └── pages/             # ✅ Pages directory (App Router = `app/`)
+│       ├── index.tsx
+│       ├── landing.tsx
+│       ├── product.tsx
+│       └── shopping-cart.tsx
+```
