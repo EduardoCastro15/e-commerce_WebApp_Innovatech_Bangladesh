@@ -1,6 +1,5 @@
 # **Project Name: Innovatech-Bangladesh**
 
-
 ## **Overview**
 This project is a digital marketplace designed to connect **farmers** with **consumers**, enabling direct sales of agricultural products. Inspired by platforms like **Amazon, Mercado Libre, and Mache Haiti**, our goal is to provide a seamless, **mobile-friendly, and multilingual** experience that enhances market access for rural producers.
 
@@ -21,14 +20,14 @@ This project is a digital marketplace designed to connect **farmers** with **con
 - **State Management:** Redux / Context API
 
 ### **Backend**
-- **Framework:** NestJS (Node.js-based, modular, scalable)
-- **Database:** PostgreSQL
-- **API:** GraphQL
+- **Framework:** Express.js (Node.js-based, lightweight and modular)
+- **Database:** PostgreSQL (via Prisma)
+- **API:** RESTful (secured with JWT)
 
 ### **Infrastructure**
-- **Hosting:** Vercel (Frontend), AWS (Backend)
+- **Hosting:** Vercel (Frontend), Render/AWS/Other (Backend)
 - **CI/CD:** GitHub Actions
-- **Containerization:** Docker
+- **Containerization:** Docker (optional for production environments)
 
 ### **Payment Integration**
 - Stripe / MercadoPago / Mobile Payments
@@ -38,7 +37,7 @@ This project is a digital marketplace designed to connect **farmers** with **con
 ### **1. Clone the Repository**
 ```sh
 git clone https://github.com/EduardoCastro15/Innovatech-Bangladesh.git
-cd your-repository
+cd Innovatech-Bangladesh
 ```
 
 ### **2. Install Dependencies**
@@ -47,6 +46,7 @@ cd your-repository
 cd frontend
 npm install
 ```
+
 #### **Backend**
 ```sh
 cd backend
@@ -54,12 +54,17 @@ npm install
 ```
 
 ### **3. Set Up Environment Variables**
-Create a `.env` file in the root directories and add:
-```
-# PostgreSQL Database
-DATABASE_URL=postgres://yourusername:yourpassword@localhost:5432/yourdatabase
+Create a `.env` file in both `frontend/` and `backend/` directories:
 
-# API Keys
+#### `.env` (Frontend)
+```
+NEXT_PUBLIC_API_URL=http://localhost:3001/api
+```
+
+#### `.env` (Backend)
+```
+DATABASE_URL=postgres://yourusername:yourpassword@localhost:5432/yourdatabase
+JWT_SECRET=your_jwt_secret
 STRIPE_API_KEY=your_stripe_api_key
 ```
 
@@ -68,10 +73,12 @@ STRIPE_API_KEY=your_stripe_api_key
 ```sh
 npm run dev
 ```
+
 #### **Backend**
 ```sh
-npm run start:dev
+npm run start
 ```
+
 The frontend will be available at `http://localhost:3000/` and the backend at `http://localhost:3001/`.
 
 ## **Project Roadmap**
@@ -97,28 +104,112 @@ We welcome contributions! If you'd like to contribute:
 5. Open a Pull Request
 
 ## **Contact**
-For inquiries, please contact **Jorge Eduardo Castro Cruces** at **georgecastrocruces1515@gmail.com** or visit our official website: **https://www.linkedin.com/in/jorge-eduardo-castro-cruces-295610233/**
+For inquiries, please contact **Jorge Eduardo Castro Cruces** at **georgecastrocruces1515@gmail.com** or visit [LinkedIn](https://www.linkedin.com/in/jorge-eduardo-castro-cruces-295610233/)
 
-```
+## **Folder Structure**
+```bash
 .
-├── CHANGELOG.md
+├── Innovatech-Bangladesh
+│   ├── LICENSE
+│   ├── Providers.tsx
+│   ├── README.md
+│   ├── app
+│   │   ├── (dashboard)
+│   │   ├── _zustand
+│   │   ├── actions
+│   │   ├── api
+│   │   ├── cart
+│   │   ├── checkout
+│   │   ├── favicon.ico
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── login
+│   │   ├── not-found.tsx
+│   │   ├── page.tsx
+│   │   ├── product
+│   │   ├── register
+│   │   ├── search
+│   │   ├── shop
+│   │   └── wishlist
+│   ├── components
+│   │   ├── AddToCartSingleProductBtn.tsx
+│   │   ├── AddToWishlistBtn.tsx
+│   │   ├── AdminOrders.tsx
+│   │   ├── Breadcrumb.tsx
+│   │   ├── BuyNowSingleProductBtn.tsx
+│   │   ├── CartElement.tsx
+│   │   ├── CategoryItem.tsx
+│   │   ├── CategoryMenu.tsx
+│   │   ├── Checkbox.tsx
+│   │   ├── ColorInput.tsx
+│   │   ├── CustomButton.tsx
+│   │   ├── DashboardProductTable.tsx
+│   │   ├── DashboardSidebar.tsx
+│   │   ├── Filters.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── HeaderTop.tsx
+│   │   ├── Heading.tsx
+│   │   ├── HeartElement.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Incentives.tsx
+│   │   ├── IntroducingSection.tsx
+│   │   ├── Newsletter.tsx
+│   │   ├── OrderItem.tsx
+│   │   ├── Pagination.tsx
+│   │   ├── ProductItem.tsx
+│   │   ├── ProductItemRating.tsx
+│   │   ├── ProductTabs.tsx
+│   │   ├── Products.tsx
+│   │   ├── ProductsSection.tsx
+│   │   ├── QuantityInput.tsx
+│   │   ├── QuantityInputCart.tsx
+│   │   ├── Range.tsx
+│   │   ├── RangeWithLabels.tsx
+│   │   ├── RatingPercentElement.tsx
+│   │   ├── SearchInput.tsx
+│   │   ├── SectionTitle.tsx
+│   │   ├── SimpleSlider.tsx
+│   │   ├── SingleProductDynamicFields.tsx
+│   │   ├── SingleProductRating.tsx
+│   │   ├── SingleReview.tsx
+│   │   ├── SortBy.tsx
+│   │   ├── StatsElement.tsx
+│   │   ├── StockAvailabillity.tsx
+│   │   ├── UrgencyText.tsx
+│   │   ├── WishItem.tsx
+│   │   └── index.ts
+│   ├── helpers
+│   │   ├── is-browser.ts
+│   │   └── is-small-screen.ts
+│   ├── lib
+│   │   └── utils.ts
+│   ├── next-env.d.ts
+│   ├── next.config.mjs
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── postcss.config.js
+│   ├── prisma
+│   │   └── schema.prisma
+│   ├── server
+│   │   ├── app.js
+│   │   ├── controllers
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   ├── prisma
+│   │   ├── routes
+│   │   └── utills
+│   ├── tailwind.config.ts
+│   ├── tsconfig.json
+│   ├── typings.d.ts
+│   └── utils
+│       ├── SessionProvider.tsx
+│       ├── actions.ts
+│       ├── categoryFormating.ts
+│       ├── db.ts
+│       ├── insertDemoData.js
+│       └── schema.ts
+├── LICENSE
 ├── README.md
-├── assets/                 # ✅ Fine as-is for legacy/custom assets
-│   ├── js/
-│   └── scss/               # Can be used for raw SCSS or migrated into Tailwind/global CSS
-├── hooks/                 # ✅ Perfect for custom hooks
-│   ├── interaction/
-│   └── tools/
-├── public/                # ✅ Static assets (served as-is)
-│   ├── data.json          # Can be fetched via `/data.json`
-│   ├── images/            # Accessible as `/images/...`
-│   └── logo/
-├── src/
-│   ├── components/        # ✅ React components
-│   ├── layouts/           # ✅ Optional, for shared layouts
-│   └── pages/             # ✅ Pages directory (App Router = `app/`)
-│       ├── index.tsx
-│       ├── landing.tsx
-│       ├── product.tsx
-│       └── shopping-cart.tsx
+└── structure.txt
 ```
