@@ -1,63 +1,63 @@
 export const categoryMenuList = [
   {
     id: 1,
-    title: "Smart Phones",
+    title: "Fresh Produce",
     src: "/smart phone icon.png",
-    href: "/shop/smart-phones"
+    href: "/shop/fresh-produce"
   },
   {
     id: 2,
-    title: "Tablets",
+    title: "Grains & Cereals",
     src: "/tablet icon.png",
-    href: "/shop/tablets"
+    href: "/shop/grains-cereals"
   },
   {
     id: 3,
-    title: "Mouses",
+    title: "Dairy & Eggs",
     src: "/mouse icon.png",
-    href: "/shop/mouses"
+    href: "/shop/dairy-eggs"
   },
   {
     id: 4,
-    title: "Cameras",
+    title: "Meat & Poultry",
     src: "/camera icon.png",
-    href: "/shop/cameras"
+    href: "/shop/meat-poultry"
   },
   {
     id: 5,
-    title: "Smart Watches",
+    title: "Fish & Seafood",
     src: "/smart watch.png",
-    href: "/shop/watches"
+    href: "/shop/fish-seafood"
   },
   {
     id: 6,
-    title: "Laptops",
+    title: "Spices & Condiments",
     src: "/laptop icon.png",
-    href: "/shop/laptops"
+    href: "/shop/spices-condiments"
   },
   {
     id: 7,
-    title: "PCs",
+    title: "Seeds & Fertilizers",
     src: "/pc icon.png",
-    href: "/shop/computers"
+    href: "/shop/seeds-fertilizers"
   },
   {
     id: 8,
-    title: "Printers",
+    title: "Packaged Goods",
     src: "/printers icon.png",
-    href: "/shop/printers"
+    href: "/shop/packaged-goods"
   },
   {
     id: 9,
-    title: "Earbuds",
+    title: "Post-Harvest Tools",
     src: "/ear buds icon.png",
-    href: "/shop/earbuds"
+    href: "/shop/post-harvest-tools"
   },
   {
     id: 10,
-    title: "Head Phones",
+    title: "Organic Products",
     src: "/headphone icon.png",
-    href: "/shop/headphones"
+    href: "/shop/organic-products"
   },
 ];
 

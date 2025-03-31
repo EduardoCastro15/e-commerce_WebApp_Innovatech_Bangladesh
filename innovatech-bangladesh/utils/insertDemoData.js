@@ -5,160 +5,148 @@ const prisma = new PrismaClient();
 const demoProducts = [
   {
     id: "1",
-    title: "Smart phone",
-    price: 22,
+    title: "Red Lady Papaya",
+    price: 120,
     rating: 5,
-    description: "This is smart phone description",
+    description: "Organically grown papayas, harvested fresh from Bogura farms.",
     mainImage: "product1.webp",
-    slug: "smart-phone-demo",
-    manufacturer: "Samsung",
-    category: "smart-phones",
-    inStock: 0,
+    slug: "red-lady-papaya",
+    manufacturer: "Bogura Agro Co-op",
+    category: "da6413b4-22fd-4fbb-9741-d77580dfdcd5",
+    inStock: 50
   },
   {
     id: "2",
-    title: "SLR camera",
-    price: 24,
+    title: "Kalijira Aromatic Rice",
+    price: 85,
     rating: 0,
-    description: "This is slr description",
+    description: "Premium small-grain rice, perfect for polao and traditional dishes.",
     mainImage: "product2.webp",
-    slug: "slr-camera-demo",
-    manufacturer: "Canon",
-    category: "cameras",
-    inStock: 0,
+    slug: "kalijira-rice",
+    manufacturer: "Dinajpur Millers Ltd.",
+    category: "a6896b67-197c-4b2a-b5e2-93954474d8b4",
+    inStock: 100
   },
   {
     id: "3",
-    title: "Mixer grinder",
-    price: 25,
+    title: "Deshi Cow Milk - 1L",
+    price: 70,
     rating: 4,
-    description: "This is mixed grinder description",
+    description: "Fresh, full-cream cow milk, delivered from rural dairy farms.",
     mainImage: "product3.webp",
-    slug: "mixed-grinder-demo",
-    manufacturer: "ZunVolt",
-    category: "mixer-grinders",
-    inStock: 1,
+    slug: "deshi-cow-milk",
+    manufacturer: "MilkCo Bangladesh",
+    category: "3117a1b0-6369-491e-8b8b-9fdd5ad9912e",
+    inStock: 200
   },
   {
     id: "4",
-    title: "Phone gimbal",
-    price: 21,
+    title: "Free-Range Chicken (Live)",
+    price: 380,
     rating: 5,
-    description: "This is phone gimbal description",
+    description: "Naturally raised chicken, antibiotic-free and healthy.",
     mainImage: "product4.webp",
-    slug: "phone-gimbal-demo",
-    manufacturer: "Samsung",
-    category: "phone-gimbals",
-    inStock: 1,
+    slug: "free-range-chicken",
+    manufacturer: "Village Farms",
+    category: "ada699e5-e764-4da0-8d3e-18a8c8c5ed24",
+    inStock: 30
   },
   {
     id: "5",
-    title: "Tablet keyboard",
-    price: 52,
+    title: "Fresh Hilsa (Ilish) - 1.2kg",
+    price: 950,
     rating: 4,
-    description: "This is tablet keyboard description",
+    description: "Padma river ilish fish, cleaned and packed on order.",
     mainImage: "product5.webp",
-    slug: "tablet-keyboard-demo",
-    manufacturer: "Samsung",
-    category: "tablet-keyboards",
-    inStock: 1,
+    slug: "fresh-hilsa",
+    manufacturer: "Sundarban Fishers",
+    category: "659a91b9-3ff6-47d5-9830-5e7ac905b961",
+    inStock: 20
   },
   {
     id: "6",
-    title: "Wireless earbuds",
-    price: 74,
-    rating: 3,
-    description: "This is earbuds description",
+    title: "Pure Turmeric Powder - 250g",
+    price: 55,
+    rating: 5,
+    description: "Stone-ground turmeric with vibrant color and aroma.",
     mainImage: "product6.webp",
-    slug: "wireless-earbuds-demo",
-    manufacturer: "Samsung",
-    category: "earbuds",
-    inStock: 1,
+    slug: "pure-turmeric",
+    manufacturer: "Herbal Roots Co.",
+    category: "782e7829-806b-489f-8c3a-2689548d7153",
+    inStock: 75
   },
   {
     id: "7",
-    title: "Party speakers",
-    price: 35,
-    rating: 5,
-    description: "This is party speakers description",
+    title: "BRRI Dhan-28 Paddy Seeds - 1kg",
+    price: 110,
+    rating: 4,
+    description: "High-yield paddy seeds suited for early harvest cycles.",
     mainImage: "product7.webp",
-    slug: "party-speakers-demo",
-    manufacturer: "SOWO",
-    category: "speakers",
-    inStock: 1,
+    slug: "brri-dhan-seeds",
+    manufacturer: "SeedTech Bangladesh",
+    category: "ss6412b4-22fd-4fbb-9741-d77580dfdcd2",
+    inStock: 150
   },
   {
     id: "8",
-    title: "Slow juicer",
-    price: 69,
+    title: "Handwoven Jute Shopping Bag",
+    price: 130,
     rating: 5,
-    description: "Slow juicer desc",
+    description: "Eco-friendly and durable bag handmade by local artisans.",
     mainImage: "product8.webp",
-    slug: "slow-juicer-demo",
-    manufacturer: "Bosch",
-    category: "juicers",
-    inStock: 1,
+    slug: "jute-shopping-bag",
+    manufacturer: "Women Crafts Union",
+    category: "4c2cc9ec-7504-4b7c-8ecd-2379a854a423",
+    inStock: 60
   },
   {
     id: "9",
-    title: "Wireless headphones",
-    price: 89,
-    rating: 3,
-    description: "This is wireless headphones description",
+    title: "Bamboo Grain Storage Bin - 40kg",
+    price: 450,
+    rating: 5,
+    description: "Traditional airtight bin for rice and grains, made from bamboo.",
     mainImage: "product9.webp",
-    slug: "wireless-headphones-demo",
-    manufacturer: "Sony",
-    category: "headphones",
-    inStock: 1,
+    slug: "bamboo-storage-bin",
+    manufacturer: "KrishiTool Mart",
+    category: "1cb9439a-ea47-4a33-913b-e9bf935bcc0b",
+    inStock: 25
   },
   {
     id: "10",
-    title: "Smart watch",
-    price: 64,
-    rating: 3,
-    description: "This is smart watch description",
+    title: "Raw Sundarbans Honey - 500ml",
+    price: 280,
+    rating: 5,
+    description: "Unfiltered natural honey collected from wild hives in the Sundarbans.",
     mainImage: "product10.webp",
-    slug: "smart-watch-demo",
-    manufacturer: "Samsung",
-    category: "watches",
-    inStock: 1,
+    slug: "sundarban-honey",
+    manufacturer: "Honey Harvesters Assoc.",
+    category: "4c2cc9ec-7504-4b7c-8ecd-2379a854a423",
+    inStock: 90
   },
   {
     id: "11",
-    title: "Notebook horizon",
-    price: 52,
-    rating: 5,
-    description: "This is notebook description",
+    title: "Goat Feed (Organic Pellet) - 10kg",
+    price: 350,
+    rating: 4,
+    description: "Balanced nutritional pellets to support goat health and growth.",
     mainImage: "product11.webp",
-    slug: "notebook-horizon-demo",
-    manufacturer: "HP",
-    category: "laptops",
-    inStock: 1,
+    slug: "goat-feed-pellets",
+    manufacturer: "AgriFeeds Ltd.",
+    category: "ss6412b4-22fd-4fbb-9741-d77580dfdcd2",
+    inStock: 40
   },
   {
     id: "12",
-    title: "Mens trimmer",
-    price: 54,
+    title: "Sun-Dried Mango Slices - 200g",
+    price: 160,
     rating: 5,
-    description: "This is trimmer description",
+    description: "Made from Langra mangoes, sweet and naturally preserved.",
     mainImage: "product12.webp",
-    slug: "mens-trimmer-demo",
-    manufacturer: "Gillete",
-    category: "trimmers",
-    inStock: 0,
-  },
-  {
-    id: "13",
-    title: "Sony Bluetooth Speaker",
-    price: 100,
-    rating: 5,
-    description: "This is Sony Bluetooth Speaker",
-    mainImage: "sony speaker image 1.jpg",
-    slug: "sony-speaker-bluetooth",
-    manufacturer: "Sony",
-    category: "speakers",
-    inStock: 1,
-  },
+    slug: "sun-dried-mango",
+    manufacturer: "MangoDelight Processors",
+    category: "fs6412b4-22fd-4fbb-9741-d77512dfdfa3",
+    inStock: 80
+  }
 ];
 
 const demoProductImages = [
@@ -187,45 +175,37 @@ const demoProductImages = [
 
 const demoCategories = [
   {
-    name: "speakers",
+    name: "dairy-eggs"
   },
   {
-    name: "trimmers",
+    name: "fish-seafood"
   },
   {
-    name: "laptops",
+    name: "fresh-produce"
   },
   {
-    name: "watches",
+    name: "grains-cereals"
   },
   {
-    name: "headphones",
+    name: "meat-poultry"
   },
   {
-    name: "juicers",
+    name: "organic-products"
   },
   {
-    name: "speakers",
+    name: "packaged-goods"
   },
   {
-    name: "earbuds",
+    name: "post-harvest-tools"
   },
   {
-    name: "tablet-keyboards",
+    name: "seeds-fertilizers"
   },
   {
-    name: "phone-gimbals",
-  },
-  {
-    name: "mixer-grinders",
-  },
-  {
-    name: "cameras",
-  },
-  {
-    name: "smart-phones",
-  },
+    name: "spices-condiments"
+  }
 ];
+
 
 async function insertDemoData() {
   for (const product of demoProducts) {
