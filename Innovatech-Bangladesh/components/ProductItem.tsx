@@ -1,13 +1,3 @@
-// *********************
-// Role of the component: Product item component 
-// Name of the component: ProductItem.tsx
-// Developer: Aleksandar Kuzmanovic
-// Version: 1.0
-// Component call: <ProductItem product={product} color={color} />
-// Input parameters: { product: Product; color: string; }
-// Output: Product item component that contains product image, title, link to the single product page, price, button...
-// *********************
-
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -21,47 +11,59 @@ const ProductItem = ({
   color: string;
 }) => {
   return (
-    <div className="flex flex-col items-center gap-y-2">
-      <Link href={`/product/${product.slug}`}>
+    <div className="flex flex-col items-center gap-y-2 w-full max-w-[250px] h-[400px] p-4 bg-white rounded-md shadow-md">
+      {/* Image */}
+      <Link href={`/product/${product.slug}`} className="h-[220px] flex items-center justify-center">
         <Image
           src={
             product.mainImage
               ? `/${product.mainImage}`
               : "/product_placeholder.jpg"
           }
-          width="0"
-          height="0"
-          sizes="100vw"
-          className="w-auto h-[300px]"
+          width={180}
+          height={180}
           alt={product?.title}
+          className="object-contain"
         />
       </Link>
+
+      {/* Title */}
       <Link
         href={`/product/${product.slug}`}
-        className={
-          color === "black"
-            ? `text-xl text-black font-normal mt-2 uppercase`
-            : `text-xl text-white font-normal mt-2 uppercase`
-        }
+        className={`text-center text-base font-semibold uppercase truncate w-full ${
+          color === "black" ? "text-black" : "text-gray-800"
+        }`}
+        style={{
+          whiteSpace: "nowrap",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+          height: "1.5rem",
+        }}
+        title={product.title}
       >
         {product.title}
       </Link>
+
+      {/* Price */}
       <p
-        className={
-          color === "black"
-            ? "text-lg text-black font-semibold"
-            : "text-lg text-white font-semibold"
-        }
+        className={`text-sm font-bold ${
+          color === "black" ? "text-black" : "text-gray-900"
+        }`}
       >
         ${product.price}
       </p>
 
-      <ProductItemRating productRating={product?.rating} />
+      {/* Rating */}
+      <div className="h-[20px]">
+        <ProductItemRating productRating={product?.rating} />
+      </div>
+
+      {/* Button */}
       <Link
         href={`/product/${product?.slug}`}
-        className="block flex justify-center items-center w-full uppercase bg-white px-0 py-2 text-base border border-black border-gray-300 font-bold text-blue-600 shadow-sm hover:bg-black hover:bg-gray-100 focus:outline-none focus:ring-2"
+        className="mt-auto w-full text-center uppercase bg-green-500 text-white py-2 text-sm font-semibold rounded hover:bg-green-600 transition"
       >
-        <p>View product</p>
+        View Product
       </Link>
     </div>
   );

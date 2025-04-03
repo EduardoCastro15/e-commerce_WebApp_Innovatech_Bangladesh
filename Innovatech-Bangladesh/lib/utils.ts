@@ -89,12 +89,12 @@ export const navigation = {
     { name: "Register Discounts", href: "#" },
   ],
   about: [
-    { name: "About Singitronic", href: "#" },
+    { name: "About Krishi Bazaar", href: "#" },
     { name: "Work With Us", href: "#" },
     { name: "Company Profile", href: "#" },
   ],
   buy: [
-    { name: "Singitronic Loyalty Card", href: "#" },
+    { name: "Krishi Bazaar Loyalty Card", href: "#" },
     { name: "Terms Of Use", href: "#" },
     { name: "Privacy Policy", href: "#" },
     { name: "Complaints", href: "#" },
@@ -102,7 +102,7 @@ export const navigation = {
   ],
   help: [
     { name: "Contact", href: "#" },
-    { name: "How to Buy at Singitronic", href: "#" },
+    { name: "How to Buy at Krishi Bazaar", href: "#" },
     { name: "FAQ", href: "#" },
   ],
 };
