@@ -27,7 +27,7 @@ const AdminOrders = () => {
 
   return (
     <div className="xl:ml-5 w-full max-xl:mt-5 ">
-      <h1 className="text-3xl font-semibold text-center mb-5">All orders</h1>
+      <h1 className="text-3xl font-semibold text-center mb-5">সমস্ত আদেশ</h1>
       <div className="overflow-x-auto">
         <table className="table table-md table-pin-cols">
           {/* head */}
@@ -38,11 +38,11 @@ const AdminOrders = () => {
                   <input type="checkbox" className="checkbox" />
                 </label>
               </th>
-              <th>Order ID</th>
-              <th>Name and country</th>
-              <th>Status</th>
-              <th>Subtotal</th>
-              <th>Date</th>
+              <th>অর্ডার আইডি</th>
+              <th>নাম এবং দেশ</th>
+              <th>স্থিতি</th>
+              <th>সাবটোটাল</th>
+              <th>তারিখ</th>
               <th></th>
             </tr>
           </thead>
@@ -98,11 +98,11 @@ const AdminOrders = () => {
           <tfoot>
             <tr>
               <th></th>
-              <th>Order ID</th>
-              <th>Name and country</th>
-              <th>Status</th>
-              <th>Subtotal</th>
-              <th>Date</th>
+              <th>অর্ডার আইডি</th>
+              <th>নাম এবং দেশ</th>
+              <th>স্থিতি</th>
+              <th>সাবটোটাল</th>
+              <th>তারিখ</th>
               <th></th>
             </tr>
           </tfoot>

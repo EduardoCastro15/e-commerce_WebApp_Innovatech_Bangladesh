@@ -1,61 +1,61 @@
 export const categoryMenuList = [
   {
     id: 1,
-    title: "Dairy / Eggs",
+    title: "দুগ্ধ / ডিম",
     src: "/dairy-eggs icon.png",
     href: "/shop/smart-phones"
   },
   {
     id: 2,
-    title: "Fish / Seafood",
+    title: "মাছ / সামুদ্রিক খাবার",
     src: "/fish-seafood icon.png",
     href: "/shop/tablets"
   },
   {
     id: 3,
-    title: "Fresh / Produce",
+    title: "তাজা / উৎপাদন",
     src: "/fresh-produce icon.png",
     href: "/shop/mouses"
   },
   {
     id: 4,
-    title: "Grains / Cereals",
+    title: "শস্য / শস্য",
     src: "/grains-cereals icon.png",
     href: "/shop/cameras"
   },
   {
     id: 5,
-    title: "Meat / Poultry",
+    title: "মাংস / মুরগি",
     src: "/meat-poultry icon.png",
     href: "/shop/watches"
   },
   {
     id: 6,
-    title: "Organic Products",
+    title: "জৈব পণ্য",
     src: "/organic-products icon.png",
     href: "/shop/laptops"
   },
   {
     id: 7,
-    title: "Packaged Goods",
+    title: "প্যাকেটজাত পণ্য",
     src: "/packaged-goods icon.png",
     href: "/shop/computers"
   },
   {
     id: 8,
-    title: "Post Harvest Tools",
+    title: "পোস্ট হার্ভেস্ট টুলস",
     src: "/post-harvest-tools icon.png",
     href: "/shop/printers"
   },
   {
     id: 9,
-    title: "Seeds / Fertilizers",
+    title: "বীজ/সার",
     src: "/seeds-fertilizers icon.png",
     href: "/shop/earbuds"
   },
   {
     id: 10,
-    title: "Spices / Condiments",
+    title: "মশলা/মশলা",
     src: "/spices-condiments icon.png",
     href: "/shop/headphones"
   },
@@ -63,46 +63,46 @@ export const categoryMenuList = [
 
 export const incentives = [
   {
-    name: "Free Shipping",
+    name: "বিনামূল্যে শিপিং",
     description:
-      "Our shipping is completely free and that is completely good for our customers.",
+      "আমাদের শিপিং সম্পূর্ণ বিনামূল্যে এবং এটি আমাদের গ্রাহকদের জন্য সম্পূর্ণ ভাল।",
     imageSrc: "/shipping icon.png",
   },
   {
-    name: "24/7 Customer Support",
+    name: "24/7 গ্রাহক সহায়তা",
     description:
-      "Our support is working all day and night to answer any question you have.",
+      "আপনার যেকোনো প্রশ্নের উত্তর দিতে আমাদের সহায়তা দিনরাত কাজ করছে।",
     imageSrc: "/support icon.png",
   },
   {
-    name: "Fast Shopping Cart",
+    name: "দ্রুত শপিং কার্ট",
     description:
-      "We have super fast shopping experience and you will enjoy it.",
+      "আমাদের অতি দ্রুত কেনাকাটার অভিজ্ঞতা রয়েছে এবং আপনি এটি উপভোগ করবেন।",
     imageSrc: "/fast shopping icon.png",
   },
 ];
 
 export const navigation = {
   sale: [
-    { name: "Discounts", href: "#" },
-    { name: "News", href: "#" },
-    { name: "Register Discounts", href: "#" },
+    { name: "ছাড়", href: "#" },
+    { name: "খবর", href: "#" },
+    { name: "রেজিস্টার ডিসকাউন্ট", href: "#" },
   ],
   about: [
-    { name: "About Krishi Bazaar", href: "#" },
-    { name: "Work With Us", href: "#" },
-    { name: "Company Profile", href: "#" },
+    { name: "কৃষি বাজার সম্পর্কে", href: "#" },
+    { name: "আমাদের সাথে কাজ করুন", href: "#" },
+    { name: "কোম্পানির প্রোফাইল", href: "#" },
   ],
   buy: [
-    { name: "Krishi Bazaar Loyalty Card", href: "#" },
-    { name: "Terms Of Use", href: "#" },
-    { name: "Privacy Policy", href: "#" },
-    { name: "Complaints", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "কৃষি বাজার লয়ালটি কার্ড", href: "#" },
+    { name: "ব্যবহারের শর্তাবলী", href: "#" },
+    { name: "গোপনীয়তা নীতি", href: "#" },
+    { name: "অভিযোগ", href: "#" },
+    { name: "অংশীদার", href: "#" },
   ],
   help: [
-    { name: "Contact", href: "#" },
-    { name: "How to Buy at Krishi Bazaar", href: "#" },
+    { name: "যোগাযোগ", href: "#" },
+    { name: "কৃষি বাজারে কিভাবে কিনবেন", href: "#" },
     { name: "FAQ", href: "#" },
   ],
 };

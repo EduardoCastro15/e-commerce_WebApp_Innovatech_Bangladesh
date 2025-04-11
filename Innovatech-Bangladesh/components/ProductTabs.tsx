@@ -28,7 +28,7 @@ const ProductTabs = ({ product }: { product: Product }) => {
           }`}
           onClick={() => setCurrentProductTab(0)}
         >
-          Description
+          বর্ণনা
         </a>
         <a
           role="tab"
@@ -37,7 +37,7 @@ const ProductTabs = ({ product }: { product: Product }) => {
           }`}
           onClick={() => setCurrentProductTab(1)}
         >
-          Additional info
+          অতিরিক্ত তথ্য
         </a>
       </div>
       <div className="pt-5">

@@ -48,10 +48,10 @@ const WishlistPage = () => {
   }, [session?.user?.email, wishlist.length]);
   return (
     <div className="bg-white">
-      <SectionTitle title="Wishlist" path="Home | Wishlist" />
+      <SectionTitle title="ইচ্ছা তালিকা" path="হোম | ইচ্ছা তালিকা" />
       {wishlist && wishlist.length === 0 ? (
         <h3 className="text-center text-4xl py-10 text-black max-lg:text-3xl max-sm:text-2xl max-sm:pt-5 max-[400px]:text-xl">
-          No items found in the wishlist
+          ইচ্ছা তালিকায় কোন আইটেম পাওয়া যায়নি
         </h3>
       ) : (
         <div className="max-w-screen-2xl mx-auto">

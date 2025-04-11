@@ -25,16 +25,16 @@ const CartPage = () => {
 
   return (
     <div className="bg-white">
-      <SectionTitle title="Cart Page" path="Home | Cart" />
+      <SectionTitle title="কার্ট পৃষ্ঠা" path="বাড়ি | কার্ট" />
       <div className="bg-white">
         <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8">
           <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Shopping Cart
+            শপিং কার্ট
           </h1>
           <form className="mt-12 lg:grid lg:grid-cols-12 lg:items-start lg:gap-x-12 xl:gap-x-16">
             <section aria-labelledby="cart-heading" className="lg:col-span-7">
               <h2 id="cart-heading" className="sr-only">
-                Items in your shopping cart
+                আপনার শপিং কার্টে আইটেম
               </h2>
 
               <ul
@@ -122,25 +122,25 @@ const CartPage = () => {
                 id="summary-heading"
                 className="text-lg font-medium text-gray-900"
               >
-                Order summary
+                অর্ডার সারাংশ
               </h2>
 
               <dl className="mt-6 space-y-4">
                 <div className="flex items-center justify-between">
-                  <dt className="text-sm text-gray-600">Subtotal</dt>
+                  <dt className="text-sm text-gray-600">সাবটোটাল</dt>
                   <dd className="text-sm font-medium text-gray-900">
                     ${total}
                   </dd>
                 </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                   <dt className="flex items-center text-sm text-gray-600">
-                    <span>Shipping estimate</span>
+                    <span>শিপিং অনুমান</span>
                     <a
                       href="#"
                       className="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500"
                     >
                       <span className="sr-only">
-                        Learn more about how shipping is calculated
+                        শিপিং কিভাবে গণনা করা হয় সে সম্পর্কে আরও জানুন
                       </span>
                       <FaCircleQuestion
                         className="h-5 w-5"
@@ -152,13 +152,13 @@ const CartPage = () => {
                 </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                   <dt className="flex text-sm text-gray-600">
-                    <span>Tax estimate</span>
+                    <span>ট্যাক্স অনুমান</span>
                     <a
                       href="#"
                       className="ml-2 flex-shrink-0 text-gray-400 hover:text-gray-500"
                     >
                       <span className="sr-only">
-                        Learn more about how tax is calculated
+                        ট্যাক্স কীভাবে গণনা করা হয় সে সম্পর্কে আরও জানুন
                       </span>
                       <FaCircleQuestion
                         className="h-5 w-5"
@@ -172,7 +172,7 @@ const CartPage = () => {
                 </div>
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
                   <dt className="text-base font-medium text-gray-900">
-                    Order total
+                    মোট অর্ডার
                   </dt>
                   <dd className="text-base font-medium text-gray-900">
                     ${total === 0 ? 0 : Math.round(total + total / 5 + 5)}

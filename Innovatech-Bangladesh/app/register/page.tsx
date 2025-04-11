@@ -80,11 +80,11 @@ const RegisterPage = () => {
   }
   return (
     <div className="bg-white">
-      <SectionTitle title="Register" path="Home | Register" />
+      <SectionTitle title="নিবন্ধন করুন" path="বাড়ি | নিবন্ধন করুন" />
       <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8 bg-white">
         <div className="flex justify-center flex-col items-center">
           <h2 className="mt-6 text-center text-2xl leading-9 tracking-tight text-gray-900">
-            Sign up on our website
+          আমাদের ওয়েবসাইটে সাইন আপ করুন
           </h2>
         </div>
 
@@ -96,7 +96,7 @@ const RegisterPage = () => {
                   htmlFor="name"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Name
+                  নাম
                 </label>
                 <div className="mt-2">
                   <input
@@ -114,7 +114,7 @@ const RegisterPage = () => {
                   htmlFor="lastname"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Lastname
+                  পদবি
                 </label>
                 <div className="mt-2">
                   <input
@@ -132,7 +132,7 @@ const RegisterPage = () => {
                   htmlFor="email"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Email address
+                  ইমেইল ঠিকানা
                 </label>
                 <div className="mt-2">
                   <input
@@ -151,7 +151,7 @@ const RegisterPage = () => {
                   htmlFor="password"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Password
+                  পাসওয়ার্ড
                 </label>
                 <div className="mt-2">
                   <input
@@ -170,7 +170,7 @@ const RegisterPage = () => {
                   htmlFor="confirmpassword"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Confirm password
+                  পাসওয়ার্ড নিশ্চিত করুন
                 </label>
                 <div className="mt-2">
                   <input
@@ -196,7 +196,7 @@ const RegisterPage = () => {
                     htmlFor="remember-me"
                     className="ml-3 block text-sm leading-6 text-gray-900"
                   >
-                    Accept our terms and privacy policy
+                    আমাদের শর্তাবলী এবং গোপনীয়তা নীতি গ্রহণ করুন
                   </label>
                 </div>
               </div>
@@ -204,7 +204,7 @@ const RegisterPage = () => {
               <div>
                 <CustomButton
                   buttonType="submit"
-                  text="Sign up"
+                  text="সাইন আপ করুন"
                   paddingX={3}
                   paddingY={1.5}
                   customWidth="full"

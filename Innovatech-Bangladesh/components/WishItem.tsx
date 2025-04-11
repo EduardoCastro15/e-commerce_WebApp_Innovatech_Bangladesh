@@ -102,9 +102,9 @@ const WishItem = ({
         onClick={() => openProduct(slug)}
       >
         {stockAvailabillity ? (
-          <span className="text-success">In stock</span>
+          <span className="text-success">স্টকে</span>
         ) : (
-          <span className="text-error">Out of stock</span>
+          <span className="text-error">স্টক শেষ</span>
         )}
       </td>
       <td>

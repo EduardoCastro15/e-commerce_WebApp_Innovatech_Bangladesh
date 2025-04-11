@@ -44,13 +44,13 @@ const HeaderTop = () => {
           <li className="flex items-center">
             <Link href="/login" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Login</span>
+              <span>লগইন করুন</span>
             </Link>
           </li>
           <li className="flex items-center">
             <Link href="/register" className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Register</span>
+              <span>নিবন্ধন করুন</span>
             </Link>
           </li>
           </>
@@ -59,7 +59,7 @@ const HeaderTop = () => {
           <li className="flex items-center">
             <button onClick={() => handleLogout()} className="flex items-center gap-x-2 font-semibold">
               <FaRegUser className="text-white" />
-              <span>Log out</span>
+              <span>লগ আউট করুন</span>
             </button>
           </li>
           </>)}

@@ -30,7 +30,7 @@ const DashboardProductTable = () => {
 
   return (
     <div className="w-full">
-      <h1 className="text-3xl font-semibold text-center mb-5">All products</h1>
+      <h1 className="text-3xl font-semibold text-center mb-5">সব পণ্য</h1>
       <div className="flex justify-end mb-5">
         <Link href="/admin/products/new">
           <CustomButton
@@ -39,7 +39,7 @@ const DashboardProductTable = () => {
             paddingX={10}
             paddingY={5}
             textSize="base"
-            text="Add new product"
+            text="নতুন পণ্য যোগ করুন"
           />
         </Link>
       </div>
@@ -54,9 +54,9 @@ const DashboardProductTable = () => {
                   <input type="checkbox" className="checkbox" />
                 </label>
               </th>
-              <th>Product</th>
-              <th>Stock Availability</th>
-              <th>Price</th>
+              <th>পণ্য</th>
+              <th>স্টক উপলব্ধতা</th>
+              <th>মূল্য</th>
               <th></th>
             </tr>
           </thead>
@@ -95,9 +95,9 @@ const DashboardProductTable = () => {
 
                   <td>
                     { product?.inStock ? (<span className="badge badge-success text-white badge-sm">
-                      In stock
+                      স্টকে
                     </span>) : (<span className="badge badge-error text-white badge-sm">
-                      Out of stock
+                      স্টক শেষ
                     </span>) }
                     
                   </td>
@@ -117,9 +117,9 @@ const DashboardProductTable = () => {
           <tfoot>
             <tr>
               <th></th>
-              <th>Product</th>
-              <th>Stock Availability</th>
-              <th>Price</th>
+              <th>পণ্য</th>
+              <th>স্টক উপলব্ধতা</th>
+              <th>মূল্য</th>
               <th></th>
             </tr>
           </tfoot>

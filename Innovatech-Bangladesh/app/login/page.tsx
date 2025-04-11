@@ -58,11 +58,11 @@ const LoginPage = () => {
   }
   return (
     <div className="bg-white">
-      <SectionTitle title="Login" path="Home | Login" />
+      <SectionTitle title="লগইন করুন" path="বাড়ি | লগইন করুন" />
       <div className="flex min-h-full flex-1 flex-col justify-center py-12 sm:px-6 lg:px-8 bg-white">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <h2 className="mt-6 text-center text-2xl font-normal leading-9 tracking-tight text-gray-900">
-            Sign in to your account
+            আপনার অ্যাকাউন্টে সাইন ইন করুন
           </h2>
         </div>
 
@@ -74,7 +74,7 @@ const LoginPage = () => {
                   htmlFor="email"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Email address
+                  ইমেইল ঠিকানা
                 </label>
                 <div className="mt-2">
                   <input
@@ -93,7 +93,7 @@ const LoginPage = () => {
                   htmlFor="password"
                   className="block text-sm font-medium leading-6 text-gray-900"
                 >
-                  Password
+                  পাসওয়ার্ড
                 </label>
                 <div className="mt-2">
                   <input
@@ -119,7 +119,7 @@ const LoginPage = () => {
                     htmlFor="remember-me"
                     className="ml-3 block text-sm leading-6 text-gray-900"
                   >
-                    Remember me
+                    আমাকে মনে রেখো
                   </label>
                 </div>
 
@@ -128,7 +128,7 @@ const LoginPage = () => {
                     href="#"
                     className="font-semibold text-black hover:text-black"
                   >
-                    Forgot password?
+                    পাসওয়ার্ড ভুলে গেছেন?
                   </a>
                 </div>
               </div>
@@ -136,7 +136,7 @@ const LoginPage = () => {
               <div>
                 <CustomButton
                   buttonType="submit"
-                  text="Sign in"
+                  text="সাইন ইন করুন"
                   paddingX={3}
                   paddingY={1.5}
                   customWidth="full"
@@ -155,7 +155,7 @@ const LoginPage = () => {
                 </div>
                 <div className="relative flex justify-center text-sm font-medium leading-6">
                   <span className="bg-white px-6 text-gray-900">
-                    Or continue with
+                    অথবা চালিয়ে যান
                   </span>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const LoginPage = () => {
                 >
                   <FcGoogle />
                   <span className="text-sm font-semibold leading-6">
-                    Google
+                    গুগল
                   </span>
                 </button>
 
@@ -192,7 +192,7 @@ const LoginPage = () => {
                     />
                   </svg>
                   <span className="text-sm font-semibold leading-6">
-                    GitHub
+                    গিটহাব
                   </span>
                 </button>
               </div>

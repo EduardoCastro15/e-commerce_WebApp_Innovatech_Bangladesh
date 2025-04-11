@@ -63,7 +63,7 @@ const ProductItem = ({
         href={`/product/${product?.slug}`}
         className="mt-auto w-full text-center uppercase bg-green-500 text-white py-2 text-sm font-semibold rounded hover:bg-green-600 transition"
       >
-        View Product
+        পণ্য দেখুন
       </Link>
     </div>
   );
